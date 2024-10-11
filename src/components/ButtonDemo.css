@@ -1,0 +1,218 @@
+.button-demo {
+    display: flex;
+    flex-direction: column; /* Keep the sets vertical */
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .button-set {
+    display: flex; /* Use flexbox to align buttons in a row */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+    margin-bottom: 20px; /* Space between sets */
+  }
+  
+  /* Remove flex-direction: column; from here */
+  .button-set h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #b79f18; /* Gold color */
+  }
+  
+  .button-set button {
+    margin: 5px 20px; /* Space between buttons */
+    padding: 30px 120px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Color Buttons */
+  .primary-button {
+    background-color: #10a815; /* Green */
+    font-weight: bold;
+    color: white;
+  }
+  .primary-button:hover {
+    background-color: #79ea7c; /* Green */
+    font-weight: bold;
+    color: black;
+  }
+  
+  .secondary-button {
+    background-color: #f44336; /* Red */
+    font-weight: bold;
+    color: white;
+  }
+
+  .secondary-button:hover {
+    background-color: #f44336ae; /* Red */
+    font-weight: bold;
+    color: black;
+  }
+  
+  .outlined-button {
+    background-color: transparent;
+    font-weight: bold; 
+    color: #b79f18;
+    padding: 10px 20px; /* Add padding for better visibility */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+  }
+  
+  .outlined-button:hover {
+    border: 1px solid #b79f18;
+    background-color: rgba(183, 159, 24, 0.1); /* Light gold background on hover */
+  }
+
+  .submit-button{
+    background-color: #000000; /* Red */
+    font-weight: bold;
+    color: white;
+  }
+
+  .submit-button:hover{
+    background-color: #ffffff; 
+    color: black;
+    border: 2px solid #000000;
+  }
+  
+  /* Gradient Buttons */
+  .gradient-primary-button {
+    background: linear-gradient(45deg, #06a821, #56ff6f);
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+  .gradient-primary-button:hover {
+    background: linear-gradient(45deg, #56ff6f, #06a821);
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+  
+  .gradient-secondary-button {
+    background: linear-gradient(45deg, #ff2a00, #ff8985);
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+
+  .gradient-secondary-button:hover {
+    background: linear-gradient(45deg, #ff8985, #ff2a00);
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+  
+  .gradient-outlined-button {
+    background: transparent;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #b79f18, #fffb00);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+
+  .gradient-outlined-button:hover {
+    background: transparent;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #fffb00, #b79f18);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+
+  .gradient-submit-button{
+    background: linear-gradient(45deg, #000000, #ffffff);
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+  }
+
+  .gradient-submit-button:hover{
+    background: linear-gradient(45deg, #ffffff, #000000);
+    font-weight: bold;
+    color: black;
+    border-radius: 50px;
+  }
+  
+  
+  /* Icon Buttons */
+  .icon-button {
+    background-color: transparent; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    padding: 10px; /* Padding around the icon */
+    transition: transform 0.3s ease; /* Add a transform transition for hover effect */
+  }
+  .icon-button:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+  }
+
+  .icon-button img {
+    width: 100px; /* Default size */
+    height: 100px; /* Default size */
+  }
+  
+  
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+  .icon-button img {
+    width: 50px; /* Adjust size for smaller screens */
+    height: 50px; /* Adjust size for smaller screens */
+  }
+
+
+  .button-demo {
+    display: flex;
+    flex-direction: column; /* Keep the sets vertical */
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .button-set {
+    display: flex; /* Use flexbox to align buttons in a row */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+    margin-bottom: 10px; /* Space between sets */
+  }
+
+  .button-set h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #b79f18; /* Gold color */
+  }
+  
+  .button-set button {
+    margin: 2px 8px; /* Space between buttons */
+    padding: 6px 25px;
+    font-size: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+    /* Icon Buttons */
+    .icon-button {
+      background-color: transparent; /* No background */
+      border: none; /* No border */
+      cursor: pointer; /* Pointer cursor */
+      padding: 0px; /* Padding around the icon */
+      transition: transform 0.3s ease; /* Add a transform transition for hover effect */
+      width: '50px';
+      height: '50px';
+    }
+    .icon-button:hover {
+      transform: scale(1); 
+    }
+
+    button.icon-button{
+      padding: 3px 15px;
+    }
+
+}
+
+  

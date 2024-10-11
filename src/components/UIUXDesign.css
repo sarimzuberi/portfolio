@@ -1,0 +1,24 @@
+.skills-list {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center;    /* Center the items horizontally */
+    font-weight: bold;      /* Make the font bold */
+    list-style-type: none;  /* Remove bullets */
+    padding: 0;             /* Remove default padding */
+    margin: 20px 0;        /* Add some space above and below the list */
+    font-family: 'Bebas Neue', sans-serif; 
+    color: #b79f18; /* Gold color */
+    text-shadow: 
+      0 1px 0 #000, 
+      0 2px 0 #000, 
+      0 3px 0 #000, 
+      0 4px 0 #000, 
+      0 5px 0 #000, 
+      0 6px 5px rgba(0, 0, 0, 0.5);
+      
+}
+
+.skills-list p {
+    margin: 5px 0;         /* Add some space between each item */
+    font-size: 1.5rem;
+}

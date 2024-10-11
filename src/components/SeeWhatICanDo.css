@@ -1,0 +1,93 @@
+/* Overall Page Layout */
+.see-what-i-can-do-page {
+  padding-top: 4rem; /* To adjust for fixed navbar */
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+}
+
+.villain {
+  height: 80vh;
+  background: linear-gradient(45deg, #000000, #ffffff); /* Background gradient */
+  background-size: 400% 400%; /* Increase background size for smooth animation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: gradient 10s ease infinite; /* Animation duration */
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.villain-content {
+  text-align: center;
+  color: #ffffff; /* Default font color for black backgrounds */
+}
+
+.villain-content h1 {
+  font-size: 3rem;
+  animation: colorChange 10s ease infinite; /* Apply color change animation */
+}
+
+.villain-content h2 {
+  font-size: 3rem;
+  animation: colorChange 10s ease infinite; /* Apply color change animation */
+}
+
+.villain-content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  animation: colorChange 10s ease infinite; /* Apply color change animation */
+}
+
+@keyframes colorChange {
+  0%, 100% { color: #ffffff; } /* White text for black background */
+  50% { color: #000000; } /* Black text for white background */
+}
+
+.gold-text {
+  font-size: 5rem;
+  font-family: 'Bebas Neue', sans-serif; 
+  color: #b79f18; /* Gold color */
+  text-shadow: 
+      0 1px 0 #000, 
+      0 2px 0 #000, 
+      0 3px 0 #000, 
+      0 4px 0 #000, 
+      0 5px 0 #000, 
+      0 6px 5px rgba(0, 0, 0, 0.5); /* Strong shadow */
+  animation: bounce 1s infinite alternate; /* Bouncing effect */
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .see-what-i-can-do-page {
+      padding-top: 0rem; /* Reduce top padding */
+  }
+
+  .villain {
+      height: auto; /* Allow height to adjust for content */
+      padding: 2rem; /* Add padding for mobile */
+  }
+
+  .villain-content h1,
+  .villain-content h2 {
+      font-size: 2.5rem; /* Reduce font size for mobile */
+  }
+
+  .villain-content p {
+      font-size: 1.2rem; /* Reduce font size for mobile */
+      margin-top: 0.5rem; /* Adjust margin for mobile */
+  }
+
+  .gold-text {
+      font-size: 3rem; /* Reduce font size for gold text on mobile */
+  }
+}

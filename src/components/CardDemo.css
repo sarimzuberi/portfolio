@@ -1,0 +1,41 @@
+.card-demo-container {
+  text-align: center;
+}
+
+.card-image {
+  width: 50%; 
+  height: auto; 
+}
+
+.featured-items-container {
+  margin-top: 20px; 
+}
+
+.featured-item {
+  margin-top: 20px; 
+}
+
+.item-name {
+  font-size: 1.5em; 
+}
+
+.item-description {
+  font-size: 1em; 
+}
+
+.swiper-wrapper {
+  overflow: visible; 
+}
+
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .card-image {
+    width: 100%; 
+    height: auto; 
+  }
+
+
+}
+

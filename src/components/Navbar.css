@@ -1,0 +1,55 @@
+/* Basic Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Spread logo and links/hamburger */
+  align-items: center;
+  padding: 1rem;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Centering the logo */
+.logo h1 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-left: 1rem; /* Adjust for spacing */
+}
+
+/* Navbar Links - Right Aligned with Space from the Edge */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end; /* Push links to the right */
+  margin-right: 2rem; /* Add space from the right edge */
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #ffdd00;
+  font-weight: bold;
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+  .navbar {
+    display: none;
+  }
+
+}

@@ -1,0 +1,305 @@
+/* webDevelopment.css */
+
+/* Overall container for Web Development section */
+.web-development-section {
+  height: auto;
+  padding: 50px;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+  color: #000;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  transition: background 0.5s ease; /* Smooth transition for background changes */
+  /*background: linear-gradient(45deg, #000000, #ffffff);  Background gradient */
+  /*animation: gradient 10s ease infinite;  Animation duration */
+}
+
+@keyframes gradient {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+/* Paragraph styling */
+.web-development-section p {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.web-development-section q {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.web-development-section p1 {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  animation: colorChange 10s ease infinite; /* Apply color change animation */
+}
+
+.web-development-section p2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+@keyframes colorChange {
+  0%, 100% { color: #ffffff; } /* White text for black background */
+  50% { color: #000000; } /* Black text for white background */
+}
+
+.gold-text {
+  font-size: 5rem;
+  font-family: 'Bebas Neue', sans-serif; 
+  color: #b79f18; /* Gold color */
+  text-shadow: 
+      0 1px 0 #000, 
+      0 2px 0 #000, 
+      0 3px 0 #000, 
+      0 4px 0 #000, 
+      0 5px 0 #000, 
+      0 6px 5px rgba(0, 0, 0, 0.5); /* Strong shadow */
+  animation: bounce 1s infinite alternate; /* Bouncing effect */
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+/* Tech Icons styling */
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.tech-icons img {
+  width: 80px;
+  height: 80px;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Section Implementations */
+.section-implementation {
+  margin-bottom: 40px;
+}
+
+.section-implementation h3 {
+  font-size: 2.6rem;
+  font-family: 'Bebas Neue', sans-serif; 
+  color: #b79f18; /* Gold color */
+  text-shadow: 
+      0 1px 0 #000, 
+      0 2px 0 #000, 
+      0 3px 0 #000, 
+      0 4px 0 #000, 
+      0 5px 0 #000, 
+      0 6px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Button Demo specific styling */
+.section-implementation .button-demo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Slider Demo specific styling */
+.section-implementation .slider-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Demo specific styling */
+.section-implementation .card-demo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Background Changer and Animations */
+.section-implementation .background-changer,
+.section-implementation .animation-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Changer Buttons Styling */
+.button-group {
+  margin: 10px 0;
+}
+
+.button-group button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-group button:hover {
+  transform: scale(1.05);
+}
+
+/* Background Changer Buttons Styling */
+.button-group-one {
+  margin: 10px 0;
+}
+
+.button-group-one button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-group-one button:hover {
+  transform: scale(1.05);
+}
+
+
+.button-group-two {
+  margin: 10px 0;
+}
+
+.button-group-two button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-group-two button:hover {
+  transform: scale(1.05);
+}
+
+/* Plain color buttons */
+.button-group button:nth-child(1) {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.button-group button:nth-child(2) {
+  background-color: #000000;
+  color: #fff;
+}
+
+.button-group button:nth-child(3) {
+  background-color: #fef9c3;
+  color: #000;
+}
+
+/* Gradient buttons */
+.button-group-one button:nth-child(1) {
+  background-image: linear-gradient(45deg, #2c3e50, #bdc3c7);
+  color: #fff;
+}
+
+.button-group-one button:nth-child(2) {
+  background-image: linear-gradient(45deg, #f0e68c, #fffacd);
+  color: #000;
+}
+
+/* Pattern buttons */
+.button-group-two button:nth-child(1) {
+  background-color: #000;
+  color: #fff;
+}
+
+.button-group-two button:nth-child(2) {
+  background-image: url("https://www.transparenttextures.com/patterns/black-twill.png");
+  color: #000;
+}
+
+/* Reset button */
+.reset-button {
+  background-color: #ff6347;
+  color: #fff;
+}
+
+.reset-button:hover {
+  background-color: #ff4500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tech-icons img {
+      width: 40px;
+      height: 40px;
+  }
+
+  .section-implementation {
+      margin-bottom: 30px;
+  }
+
+  .section-implementation h3 {
+      font-size: 1.4rem;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+  .tech-icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .web-development-section {
+      height: auto; /* Allow height to adjust for content */
+      padding: 2rem; /* Add padding for mobile */
+  }
+
+  .web-development-section h1{
+      font-size: 2.5rem; /* Reduce font size for mobile */
+  }
+
+  .web-development-section h3{
+    font-size: 2rem; /* Reduce font size for mobile */
+}  
+
+  .web-development-section p {
+      font-size: 1.2rem; /* Reduce font size for mobile */
+      margin-top: 0.5rem; /* Adjust margin for mobile */
+      padding-left: 0rem; 
+      padding-right: 0rem;
+  }
+
+  .gold-text {
+      font-size: 3rem; /* Reduce font size for gold text on mobile */
+  }
+}

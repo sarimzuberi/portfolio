@@ -1,0 +1,157 @@
+/* About.css */
+.about {
+  padding: 4rem 2rem;
+  background: linear-gradient(45deg, #ffffff, #000000); /* Gradient background */
+  background-size: 400% 400%;
+  animation: backgroundAnimation 10s ease infinite; /* Background animation */
+  color: #000; /* Default text color */
+  text-align: center;
+  position: relative; /* Required for absolute positioning of keywords */
+  overflow: hidden; /* Hide overflow to contain keywords within section */
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  animation: colorChange1 5s infinite alternate; /* Adding animation */
+}
+
+/* Keyframes for color changing effect for the heading */
+@keyframes colorChange1 {
+  0% { color: #000000; } /* Start color */
+  50% { color: #ffdd00; } /* Middle color */
+  100% { color: #b79f18; } /* End color */
+}
+
+/* Keyframes for paragraph color change */
+@keyframes paragraphColorChange {
+  0%, 100% { color: #000000; } /* Black text for white background */
+  50% { color: #ffffff; } /* White text for black background */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column; /* For stacking on small screens */
+  align-items: center;
+  position: relative; /* Required for positioning */
+  z-index: 1; /* Ensure content is above sliding keywords */
+}
+
+.image-container {
+  width: 250px; /* Adjust size */
+  height: 250px; /* Adjust size */
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Ensures the image fits in the circle */
+  margin-bottom: 2rem;
+  position: relative; /* Required for positioning the border */
+}
+
+.image-container::before {
+  content: ''; /* Empty content for the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Circular border */
+  border: 5px solid transparent; /* Transparent border */
+  border-top: 5px solid #ffdd00; /* Visible part of the border */
+  border-bottom: 5px solid #b79f18; /* Another visible part of the border */
+  animation: rotate 2s linear infinite; /* Rotation effect */
+  z-index: 1; /* Ensure border is above the image */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Starting point */
+  }
+  100% {
+    transform: rotate(360deg); /* Full rotation */
+  }
+}
+
+.about-image {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  z-index: 2; /* Ensure image is on top of the border */
+}
+
+
+/* Adding animation to the paragraph */
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: bold;
+  animation: paragraphColorChange 10s ease infinite; /* Added paragraph color animation */
+}
+
+/* Keywords section */
+.keywords {
+  position: absolute; /* Positioning keywords */
+  top: 45%; /* Center vertically behind the image */
+  left: 0;
+  right: 0;
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: hidden; /* Hides overflow */
+  animation: slide 10s linear infinite; /* Sliding effect */
+  z-index: 0; /* Ensure keywords are behind the content */
+}
+
+.keywords span {
+  display: inline-block; /* To allow margin between words */
+  margin: 0 30px; /* Adjust spacing */
+  font-size: 2.4rem; /* Adjust size */
+  color: rgba(255, 255, 255, 0.2); /* Light color for visibility */
+  font-weight: bold;
+}
+
+/* Keywords sliding animation */
+@keyframes slide {
+  0% {
+    transform: translateX(100%); /* Start off-screen */
+  }
+  100% {
+    transform: translateX(-100%); /* Slide to the left */
+  }
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+  /* Keywords section */
+.keywords {
+  position: absolute; /* Positioning keywords */
+  top: 30%; /* Center vertically behind the image */
+  left: 0;
+  right: 0;
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: visible; /* Hides overflow */
+  animation: slide 5s linear infinite; /* Sliding effect */
+  z-index: 0; /* Ensure keywords are behind the content */
+}
+
+.keywords span {
+  display: inline-block; /* To allow margin between words */
+  margin: 0 30px; /* Adjust spacing */
+  font-size: 2rem; /* Adjust size */
+  color: rgba(255, 255, 255, 0.2); /* Light color for visibility */
+  font-weight: bold;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%); /* Start off-screen */
+  }
+  100% {
+    transform: translateX(-250%); /* Slide to the left */
+  }
+}
+
+}

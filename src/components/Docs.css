@@ -1,0 +1,179 @@
+/* Docs.css */
+.cv-certificates {
+    padding: 4rem 2rem;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+    color: #333;
+    text-align: center;
+  }
+
+  
+  .cv-certificates h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: colorChange1 3s infinite alternate; 
+  }
+  
+  .cv-section, .certificates-section {
+    margin: 2rem 0;
+    background-color: #aba9a9;
+    background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+    padding: 2rem;
+    /*animation: colorChange1 3s infinite alternate;  Adding animation */
+    border-radius: 8px;
+    color:#000000;
+    position: relative; /* Necessary for absolute positioning of pseudo-elements */
+    z-index: 1; /* Ensure the content is on top */
+}
+/* Keyframes for color changing effect for the heading */
+@keyframes colorChange1 {
+    0% { color: #ffffff; } /* Start color */
+    50% { color: #ffdd00; } /* Middle color */
+    100% { color: #b79f18; } /* End color */
+}
+
+  
+  .btn {
+    margin: 0.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000; /* Button background color */
+    color: #ffffff; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ffffff; /* Button background color on hover */
+    color: #000000; /* Button text color on hover */
+  }
+
+
+  .cbtn {
+    margin: 0.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b79f18; /* Button background color */
+    color: #ffffff; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cbtn:hover {
+    background-color: #b79f1879; /* Button background color on hover */
+    color: #000000; /* Button text color on hover */
+  }
+  
+  .certificate-card {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+    /*background-size: cover;  or 'contain' based on your preference */
+    background-repeat: repeat;
+    color: #b79f18;
+    border: 5px solid #b79f18;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .certificate-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .certificate-card h4 {
+    font-size: 1.2rem;
+  }
+  
+/* .certificate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+  } */
+
+/* Modal preview styles */
+.modal-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the background cover the entire screen */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 25%; /* Width of the modal */
+    height: 70%; /* Height of the modal */
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .certificate-card {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+    color: #b79f18;
+    border: 5px solid #b79f18;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 70%;
+    height: 180px; /* Set a fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align content evenly */
+
+  }
+  /* Modal preview styles */
+  .modal-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the background cover the entire screen */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 85%; /* Width of the modal */
+    height: 60%; /* Height of the modal */
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}

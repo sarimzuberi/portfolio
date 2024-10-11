@@ -1,0 +1,27 @@
+/* src/components/divider.css */
+
+.decorative-divider {
+    text-align: center; /* Center the divider */
+    margin: 0rem 0; /* Space above and below the divider */
+}
+
+.sparkle {
+    width: 100%; /* Full width */
+    height: 5px; /* Height of the line */
+    /*background: linear-gradient(135deg, #ffdd00, #b79f18);*/
+    background: linear-gradient(135deg, #ffdd00, #000000);
+    background-size: 200% 200%; /* For animation */
+    animation: sparkle 5s linear infinite; /* Animation effect */
+}
+
+@keyframes sparkle {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}

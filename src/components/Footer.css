@@ -1,0 +1,27 @@
+/* Footer.css */
+.footer {
+    padding: 2rem;
+    background: linear-gradient(45deg, #000000, #ffffff); /* Background gradient */
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: #ccd6f6;
+    text-align: center;
+  }
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .footer p {
+    margin: 0;
+    animation: colorChange 10s ease infinite;
+
+  }
+
+  @keyframes colorChange {
+    0%, 100% { color: #ffffff; } /* White text for black background */
+    50% { color: #000000; } /* Black text for white background */
+  }
+
+  
