@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <link rel="stylesheet" href="%PUBLIC_URL%/static/css/main.css">
+    <link rel="stylesheet" href="./static/js/main.css">
     
     <title>React App</title>
   </head>
@@ -20,10 +20,10 @@
     <div id="root"></div>
 
     <script>
-      console.log("JavaScript file is being loaded: %PUBLIC_URL%/static/js/main.js");
+      console.log("JavaScript file is being loaded: ./static/js/main.js");
     </script>
 
-    <script src="%PUBLIC_URL%/static/js/main.js"></script>
+    <script src="./static/js/main.js"></script>
 
     <script>
       console.log("Checking if window location has hash...");
@@ -43,7 +43,7 @@
 
     <!-- Debug: Fetch CSS and JS to check if they load correctly -->
     <script>
-      fetch("%PUBLIC_URL%/static/css/main.css")
+      fetch("./static/js/main.css")
         .then(response => {
           if (!response.ok) {
             console.error("Failed to load CSS file: ", response.status, response.statusText);
@@ -55,7 +55,7 @@
     </script>
 
     <script>
-      fetch("%PUBLIC_URL%/static/js/main.js")
+      fetch("./static/js/main.js")
         .then(response => {
           if (!response.ok) {
             console.error("Failed to load JS file: ", response.status, response.statusText);
