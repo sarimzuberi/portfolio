@@ -11,7 +11,6 @@ import image3 from '../assets/image3.jpeg';
 const SliderDemo = () => {
   return (
     <div className="slider-container">
-      console.log("Checking if Slider is rendered");
       
       {/* Text above first Swiper */}
       <div className='slider-text'>Swipe to see more images</div>

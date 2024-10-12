@@ -28,7 +28,6 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills-section">
-      console.log("Checking if Skills is rendered");
       <h2>Skills</h2>
       <div className="skills-container">
         {skillsData.map((data, index) => (

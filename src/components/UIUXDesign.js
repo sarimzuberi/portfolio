@@ -7,7 +7,6 @@ import './WebDevelopment.css';
 const UIUXDesign = () => {
     return (
         <div id="uiux-design" className="web-development-section">
-            console.log("Checking if UIUX is rendered");
             <span className="gold-text">UI/UX Design</span>
 
             <p>I have extensive experience in UI/UX design, focusing on creating user-centered designs that enhance user experiences. My expertise encompasses a wide range of design processes, including:</p>

@@ -13,7 +13,6 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      console.log("Checking if Navbar is rendered");
       <div className="logo">
         <h1>My Portfolio</h1>
       </div>

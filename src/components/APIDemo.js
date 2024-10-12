@@ -28,7 +28,6 @@ const APIDemo = () => {
 
     return (
         <div id="api-demo" className="web-development-section">
-            console.log("Checking if API is rendered");
             <span className="gold-text">APIs</span>
 
             <p>

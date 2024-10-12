@@ -18,7 +18,6 @@ const SeeWhatICanDo = () => {
 
   return (
     <div className="see-what-i-can-do-page">
-      console.log("Checking if Page 2 is rendered");
       {/* Navigation Bar */}
       <Navbar scrollToSection={scrollToSection} />
 

@@ -14,7 +14,6 @@ const ProjectCard = ({ title, pdfLink }) => {
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <div className="project-card" onClick={handleCardClick}>
-      console.log("Checking if Projects is rendered");
         <h3>{title}</h3>
       </div>
 

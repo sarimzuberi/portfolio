@@ -6,7 +6,6 @@ import './WebDevelopment.css';
 const ArtificialIntelligence = () => {
     return (
         <div id="artificial-intelligence" className="web-development-section">
-            console.log("Checking if AI is rendered");
             <span className="gold-text">Artificial Intelligence</span>
 
             <p>

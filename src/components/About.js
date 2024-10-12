@@ -36,7 +36,6 @@ const About = () => {
   return (
     <section id="about" className="about">
       <h2>About Me</h2>
-      console.log("Checking if About is rendered");
       <div className="keywords">
         <span>Hardworking</span>
         <span>Punctual</span>

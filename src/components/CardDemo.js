@@ -48,7 +48,6 @@ const CardDemo = () => {
 
   return (
     <div className="card-demo-container">
-      console.log("Checking if Cards is rendered");
       <h2 className="card-demo-heading">Card Carousel</h2>
 
       <Swiper

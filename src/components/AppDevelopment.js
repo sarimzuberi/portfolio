@@ -7,7 +7,6 @@ import './WebDevelopment.css';
 const AppDevelopment = () => {
     return (
         <div id="app-development" className="web-development-section">
-            console.log("Checking if App is rendered");
             <span className="gold-text">App Development</span>
 
             <p>I have extensive experience in mobile application development, with a deep understanding of both <strong>Android</strong> and <strong>iOS</strong> platforms. My expertise ranges from building native apps in <strong>Java</strong>, <strong>Kotlin</strong>, and <strong>Swift</strong>, to cross-platform applications using <strong>Flutter</strong>, providing the flexibility to develop for both platforms with a single codebase.</p>
