@@ -49,6 +49,7 @@ const WebDevelopment = () => {
 
   return (
     <div id = "web-development" className="web-development-section" style={backgroundStyle}>
+      console.log("Checking if WebDev is rendered");
       <span className="gold-text">Web Development</span>
 
       <p>

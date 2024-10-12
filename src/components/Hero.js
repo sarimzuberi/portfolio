@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <section id="home" className="hero">
+      console.log("Checking if Hero is rendered");
       <motion.div
         className="hero-content"
         initial={{ opacity: 0 }}

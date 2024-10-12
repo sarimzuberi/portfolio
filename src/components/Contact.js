@@ -76,6 +76,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
+      console.log("Checking if Contacts is rendered");
       <h2>Contact Me</h2>
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="input-container">

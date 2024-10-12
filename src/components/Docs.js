@@ -24,6 +24,7 @@ const CVAndCertificates = () => {
 
   return (
     <section id="cv-certificates" className="cv-certificates">
+      console.log("Checking if Docs is rendered");
       <h2>CV & Certificates</h2>
 
       <div className="cv-section">

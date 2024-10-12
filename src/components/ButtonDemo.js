@@ -38,6 +38,7 @@ const ButtonDemo = () => {
 
   return (
     <div className="button-demo">
+      console.log("Checking if Button is rendered");
       {/* Color Button Set */}
       <div className="button-set color-set">
         <button className="primary-button" onClick={handleLoadingClick}>
